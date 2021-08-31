@@ -10,8 +10,8 @@ public class Main {
         Shop shop3 = new Shop(countDay);
 
         Thread thread1 = new Thread(null, shop1::calc, "Магазин 1");
-        Thread thread2 = new Thread(null, shop1::calc, "Магазин 2");
-        Thread thread3 = new Thread(null, shop1::calc, "Магазин 3");
+        Thread thread2 = new Thread(null, shop2::calc, "Магазин 2");
+        Thread thread3 = new Thread(null, shop3::calc, "Магазин 3");
 
         thread1.start();
         thread2.start();
